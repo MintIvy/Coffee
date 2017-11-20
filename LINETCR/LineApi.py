@@ -37,9 +37,9 @@ class LINE:
     self.authToken = self.Talk.authToken
     self.cert = self.Talk.cert
     self._headers = {
-              'X-Line-Application': 'DESKTOPMAC 10.10.2-YOSEMITE-x64    MAC 4.5.0', 
+              'X-Line-Application': 'Chrome/61.0.3163.123', 
               'X-Line-Access': self.authToken, 
-              'User-Agent': 'Line/6.0.0 iPad4,1 9.0.2'
+              'User-Agent': 'Mozilla/5.0 (X11; CrOS x86_64 9765.85.0)'
    }
     self.Poll = Poll(self.authToken)
     self.channel = channel.Channel(self.authToken)
@@ -338,7 +338,7 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("MikanBOT")
+      print("Roman's")
       print("mid -> " + prof.mid)
       print("name -> " + prof.displayName)
       print("authToken -> " + self.authToken)
